@@ -1,0 +1,52 @@
+{
+    "users":[
+        {
+            "id": 1,
+            "name": "Leanne Graham",
+            "username": "Bret",
+            "email": "Sincere@april.biz",
+            "city": "Gwenborough",
+            "phone": "01700000000"
+        },
+        {
+            "id": 2,
+            "name": "Clementine Bauch",
+            "username": "Bauch",
+            "email": "Nathan@yesenia.net",
+            "city": "McKenziehaven",
+            "phone": "01700000001"
+        },
+        {
+            "id": 3,
+            "name": "Chelsey Dietrich",
+            "username": "Kamren",
+            "email": "Lucio_Hettinger@annie.ca",
+            "city": "Roscoeview",
+            "phone": "01700000002"
+        },
+        {
+            "id": 4,
+            "name": "Mrs. Dennis Schulist",
+            "username": "Leopoldo_Corkery",
+            "email": "Karley_Dach@jasper.info",
+            "city": "South Christy",
+            "phone": "01700000003"
+        },
+        {
+            "id": 5,
+            "name": "Kurtis Weissnat",
+            "username": "Elwyn.Skiles",
+            "email": "Telly.Hoeger@billy.biz",
+            "city": "Howemouth",
+            "phone": "01700000004"
+        },
+        {
+            "id": 6,
+            "name": "Clementina DuBuque",
+            "username": "Moriah.Stanton",
+            "email": "Rey.Padberg@karina.biz",
+            "city": "Lebsackbury",
+            "phone": "01700000005"
+        }
+    ]
+}
