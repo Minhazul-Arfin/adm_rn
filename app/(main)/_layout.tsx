@@ -8,8 +8,8 @@ const MainTabsLayout = () => {
     // <Stack>
     //   <Stack.Screen name='index' options={{title:"Home"}}/>
     // </Stack>
-    <Tabs screenOptions={{ tabBarActiveTintColor: '#10b981' }}>
-      <Tabs.Screen name='index' options={{title:"Home", 
+    <Tabs screenOptions={{ tabBarActiveTintColor: '#10b981'}}>
+      <Tabs.Screen name='index' options={{title:"Home",
                                             tabBarIcon: ({ color }) => 
                                             <FontAwesome size={28} name="home" color={color} />,}}/>
 

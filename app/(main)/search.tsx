@@ -23,18 +23,23 @@ const SearchTab = () => {
         if(result){
             setData(result);
         }
-    }
+    };
+    // if(!searchUser){
+    //     searchUser(" ");
+    // }
+    // useEffect(() => { const defaultValue = 'default'; fetchData(defaultValue); },
 
-    // useEffect(()=>{
-    //   searchUser();
-    // }, []);
+    useEffect(()=>{
+    const defaultValue = " ";
+      searchUser(defaultValue);
+    }, []);
 
  
 
 
   return (
     <GestureHandlerRootView>
-        
+        <Text style={{fontSize: 30, textAlign:'center'}}>Search Proctors Here...</Text>
         <TextInput 
             placeholder='Type here...'
             clearButtonMode='always'
@@ -49,18 +54,18 @@ const SearchTab = () => {
             onChangeText={(text) => searchUser(text)}
         />
         <ScrollView>
-        <Text style={{fontSize: 30, textAlign:'center'}}>Fetching Data From API</Text>
         {
             data.length ?
             data.map((item)=>
-                    <View style={{padding: 20, borderWidth: 2, borderRadius: 20, borderColor: '#92f0d4', marginHorizontal: 10, marginVertical: 5, backgroundColor: '#cbd5e1'}}>
+                    <View style={{padding: 20, borderWidth: 2, borderRadius: 20, borderColor: '#063970', marginHorizontal: 10, marginVertical: 5, backgroundColor: '#cbd5e1'}}>
                         <Text style={{fontSize: 20}}>ID: {item.id}</Text>
                         <Text style={{fontSize: 20}}>Name: {item.name}</Text>
                         <Text style={{fontSize: 20}}>Email: {item.email}</Text>
                         <Text style={{fontSize: 20}}>Phone: {item.phone}</Text>
                         {/* <Text style={{fontSize: 20}}>City: {item.address.city}</Text> */}
+                        
                         <Text style={{fontSize: 25,
-                                     backgroundColor: "#10b981",
+                                     backgroundColor: "#14b8a6",
                                      textAlign:'center',
                                      paddingVertical: 5,
                                      marginTop: 10,

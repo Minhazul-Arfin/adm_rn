@@ -69,11 +69,11 @@ const info = () => {
             onChange={(value) => serachUser(value)}
         />
         <ScrollView>
-        <Text style={{fontSize: 30, textAlign:'center'}}>Fetching Data From API</Text>
+        <Text style={{fontSize: 30, textAlign:'center'}}>All Members</Text>
         {
             data.length ?
             data.map((item)=>
-                    <View style={{padding: 20, borderWidth: 2, borderRadius: 20, borderColor: '#92f0d4', marginHorizontal: 10, marginVertical: 5, backgroundColor: '#f5f5f5'}}>
+                    <View style={{padding: 20, borderWidth: 2, borderRadius: 20, borderColor: '#063970', marginHorizontal: 10, marginVertical: 5, backgroundColor: '#f5f5f5'}}>
                         <Text style={{fontSize: 20}}>ID: {item.id}</Text>
                         <Text style={{fontSize: 20}}>Name: {item.name}</Text>
                         <Text style={{fontSize: 20}}>Email: {item.email}</Text>
@@ -81,14 +81,14 @@ const info = () => {
                         {/* <Text style={{fontSize: 20}}>City: {item.address.city}</Text> */}
                         <Text style={{fontSize: 20}} onPress={popUp}>Note: {item.company.catchPhrase}</Text>
                         <Text style={{fontSize: 20,
-                                     backgroundColor: "#12c782",
+                                     backgroundColor: "#14b8a6",
                                      textAlign:'center',
                                      paddingVertical: 10,
                                      marginTop: 10,
                                      marginHorizontal: '30%',
                                      borderRadius: 20}} 
 
-                                onPress={()=>{Linking.openURL('tel:01732903003');}}>Call Now</Text>                        
+                                onPress={()=>{Linking.openURL('tel:01732903003');}}>Call Now</Text>                       
                     </View>   
             )
             : null

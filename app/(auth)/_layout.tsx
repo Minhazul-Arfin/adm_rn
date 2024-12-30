@@ -6,7 +6,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 const AuthTabsLayout = () => {
   return (
     <Stack>
-      <Stack.Screen name='index' options={{title:"Authentication"}}/>
+      <Stack.Screen name='index' options={{title:"Authentication", headerShown: false}}/>
     </Stack>
   )
 }

@@ -5,20 +5,22 @@ import * as SplashScreen from "expo-splash-screen";
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-<<<<<<< HEAD
   // const [isLogin, setIsLogin] = useState(false);
-=======
-  const [isLogin, setIsLogin] = useState(true);
->>>>>>> e01464293282c16bd17ab65872b5f4cc1af9a8c9
 
-useEffect(() => {
-  SplashScreen.hideAsync();
-}, []);
+// useEffect(() => {
+//   SplashScreen.hideAsync();
+// }, []);
 
   return (
-      <>
-        <Stack/>
-        {/* {isLogin ? <Redirect href={"/(main)"}/> : <Redirect href={"/(auth)"}/>} */}
-      </>
+      // <>
+      //   <Stack/>
+      //   {/* {isLogin ? <Redirect href={"/(main)"}/> : <Redirect href={"/(auth)"}/>} */}
+      //   {/* <Stack.Screen name="index" options={{headerShown: false}}/> */}
+      // </>
+
+      <Stack>
+            <Stack.Screen name='(main)' options={{ headerShown:false}}/>
+            <Stack.Screen name='(auth)' options={{ headerShown:false}}/>
+      </Stack>
   );
 };
